@@ -1,0 +1,17 @@
+textarea {
+    min-height: 400px;
+}
+
+.read {
+    background-color: rgb(218, 218, 218);
+    height: 100px;
+    margin: 15px;
+    padding: 10px;
+}
+
+.not_read{
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    margin: 15px;
+    padding: 10px;
+}

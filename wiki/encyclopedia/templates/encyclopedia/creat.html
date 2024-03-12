@@ -1,0 +1,20 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Creat
+{% endblock %}
+
+{% block body %}
+<p style="color: red;">{{ error }}</p>
+<form action="{% url 'creat' %}" method="post">
+    {% csrf_token %}
+    <p><input class="search" type="text" name="title" placeholder="Title" style="width: 30%;" ></p>
+    
+    <label>content for the page:</label>
+    <br>
+    <textarea id="content" name="content" placeholder="write the content in markdown format" style="height:300px;" rows="4" cols="80"></textarea>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+      
+{% endblock %}

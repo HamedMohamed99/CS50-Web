@@ -1,0 +1,81 @@
+// Define Google's colors
+$color-blue: #4285f4;
+$color-green: #34a853;
+$color-yellow: #fbbc05;
+$color-red: #ea4335;
+
+// Define font families
+$font-primary: 'Google Sans', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 584px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 0;
+}
+
+input[type="text"] {
+  background-color: #fff;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  box-shadow: none;
+  font-size: 16px;
+  font-family: $font-primary;
+  height: 44px;
+  padding: 0 12px;
+  width: 100%;
+
+  &:focus {
+    border-color: $color-blue;
+    box-shadow: 0 0 0 1px $color-blue;
+  }
+
+  &::placeholder {
+    color: #999;
+  }
+}
+
+input[type="submit"] {
+  background-color: $color-blue;
+  border: none;
+  border-radius: 24px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: $font-secondary;
+  height: 44px;
+  padding: 0 24px;
+  margin-left: 8px;
+
+  &:hover {
+    background-color: darken($color-blue, 10%);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px $color-blue;
+    outline: none;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+
+  img {
+    height: 92px;
+    width: 272px;
+  }
+}
+
